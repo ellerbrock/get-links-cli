@@ -1,7 +1,7 @@
 {
   "name": "get-links-cli",
   "description": "get links via dom selector (cli version)",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Maik Ellerbrock <opensource@frapsoft.com> (https://github.com/ellerbrock)",
   "main": "dist/get-links-cli.js",
   "license": "MIT",
@@ -17,6 +17,13 @@
     "build": "cross-env NODE_ENV=production babel src -d dist",
     "start": "babel-node src/get-links-cli",
     "test": "eslint src"
+  },
+  "files": [
+    "dist/get-links-cli.js"
+  ],
+  "preferGlobal": "true",
+  "bin": {
+    "get-links": "dist/get-links-cli.js"
   },
   "babel": {
     "presets": [
@@ -53,8 +60,7 @@
   "dependencies": {
     "commander": "^2.9.0",
     "console-emoji": "^0.0.2",
-    "get-links": "^0.0.2",
-    "rimraf": "^2.5.4"
+    "get-links": "^0.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -64,6 +70,7 @@
     "eslint": "3.11.1",
     "eslint-config-standard": "6.2.1",
     "eslint-plugin-promise": "3.4.0",
-    "eslint-plugin-standard": "2.0.1"
+    "eslint-plugin-standard": "2.0.1",
+    "rimraf": "^2.5.4"
   }
 }

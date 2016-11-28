@@ -21,4 +21,3 @@ if (!commander.url || !commander.css) {
       links.forEach(v => log(v, 'green'))
     })
 }
-

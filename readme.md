@@ -4,9 +4,22 @@
 
 _get links via dom selector (cli version)_
 
+
+## Installation
+
+`npm install -g get-links-cli`
+
+or
+
+`yarn global add get-links-cli`
+
 ## Example
 
-`./get-links-cli.js -u 'http://domain.tld' -c '.a title'`
+`get-links -u 'https://domain.tld' -c '.a title'`
+
+or 
+
+`get-links --url 'https://domain.tld' --css '.a title'`
 
 
 ### Contact / Social Media
