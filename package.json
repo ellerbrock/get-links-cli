@@ -1,0 +1,69 @@
+{
+  "name": "get-links-cli",
+  "description": "get links via dom selector (cli version)",
+  "version": "0.0.2",
+  "author": "Maik Ellerbrock <opensource@frapsoft.com> (https://github.com/ellerbrock)",
+  "main": "dist/get-links-cli.js",
+  "license": "MIT",
+  "repository": {
+    "url": "git@github.com:ellerbrock/get-links-cli.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/ellerbrock/get-links-cli/issues"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "cross-env NODE_ENV=production babel src -d dist",
+    "start": "babel-node src/get-links-cli",
+    "test": "eslint src"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "env": {
+      "production": {
+        "presets": [
+          "es2015",
+          "babili"
+        ]
+      }
+    }
+  },
+  "extends": "standard",
+  "installedESLint": true,
+  "plugins": [
+    "standard",
+    "promise"
+  ],
+  "keywords": [
+    "collect-links",
+    "get-links",
+    "get-links-cli",
+    "get-urls",
+    "get-urls-cli",
+    "href",
+    "link-css",
+    "link-parser",
+    "links",
+    "url-css",
+    "urls"
+  ],
+  "dependencies": {
+    "commander": "^2.9.0",
+    "console-emoji": "^0.0.2",
+    "get-links": "^0.0.2",
+    "rimraf": "^2.5.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babel-preset-es2015": "^6.18.0",
+    "babili": "^0.0.9",
+    "cross-env": "^3.1.3",
+    "eslint": "3.11.1",
+    "eslint-config-standard": "6.2.1",
+    "eslint-plugin-promise": "3.4.0",
+    "eslint-plugin-standard": "2.0.1"
+  }
+}
