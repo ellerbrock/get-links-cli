@@ -13,8 +13,8 @@ commander
   .parse(process.argv)
 
 if (!commander.url || !commander.css) {
-  log('Missing required parameters! (URL, CSS-Selector)', 'err')
-  log(`Usage: ${basename(__filename)} -u 'http://domain.tld' -c 'a'`, 'yellow')
+  log('Missing required parameters!', 'err')
+  log(`Example Usage: get-links -u 'https://domain.tld' -c 'a .title'`, 'warn')
 } else {
   getLinks(commander.url, commander.css)
     .then(links => {

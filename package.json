@@ -1,7 +1,7 @@
 {
   "name": "get-links-cli",
   "description": "get links via dom selector (cli version)",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Maik Ellerbrock <opensource@frapsoft.com> (https://github.com/ellerbrock)",
   "main": "dist/get-links-cli.js",
   "license": "MIT",
