@@ -4,6 +4,7 @@
 
 _get links via dom selector (cli version)_
 
+**Info:** You can find the non-CLI Version [here](https://www.npmjs.com/package/get-links)
 
 ## Installation
 
@@ -15,12 +16,24 @@ or
 
 ## Example
 
-`get-links -u 'https://domain.tld' -c '.a title'`
+get all links from site:
 
-or 
+`get-links -u https://domain.tld -c a`
 
-`get-links --url 'https://domain.tld' --css '.a title'`
+get all links with css class ".video":
 
+`get-links -u https://domain.tld -c "a .video"`
+
+save links to file:
+
+`get-links -u https://domain.tld -c "a .video" -o links.txt`
+
+
+## Parameter
+
+- `-u [--url]` : URL (required)
+- `-c [--css]` : DOM/CSS Selector (required)
+- `-o [--out]` : Output to file (optional)
 
 ### Contact / Social Media
 
