@@ -6,7 +6,6 @@ import getLinks from 'get-links'
 import log from 'console-emoji'
 import commander from 'commander'
 import * as fs from 'fs'
-import { path } from 'path'
 
 commander
   .option('-u, --url <url>', 'URL')
@@ -31,7 +30,6 @@ if (!commander.url || !commander.css) {
             })
           }
         })
-      }
-      else return links.forEach(v => log(v, 'green'))
+      } else return links.forEach(v => log(v, 'green'))
     })
 }
